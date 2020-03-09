@@ -26,6 +26,7 @@ Read through the code to understand what it is supposed to do. As you are readin
 Things to look for (and which should be corrected).
 * Error (red square) or warning (yellow triangle) markers.
 * Variables named "sprite" -- rename with a meaningful name.
+* Animations without meaningful names -- for example: *cat* and *cat_copy_1" should be renamed, something like "cat_sitting" and "cat_standing" would help the reader to understand why there were two cat animations and what was different about them.
 * Duplicate / redundant function calls. Look for:
   - Setting an object property that never changes in the `draw( )` function. Make those calls outside of the `draw( )` function.
   - Multiple calls to `drawSprites( )` -- in general you only need **one** call, usually in the `draw( )` function. If you think you need more than one call to `drawSprites( )` there **must** be a comment explaining why you need more than one call.
